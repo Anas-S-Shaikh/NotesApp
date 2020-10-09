@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Ubuntu&display=swap" rel="stylesheet">
+    <title>My Notes | Welcome to My Notes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:1000px)" href="phone.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="main">
+                <div class="logo">
+                    NotesApp
+                </div>
+                <div class="toggle" onclick="toggle();"></div>
+                <div class="center">
+                    Welcome to NotesApp!
+                </div>
+
+            </div>
+            <div class="formbox">
+                <input type="text" id="inputText">
+                <button class="btn">Search</button>
+            </div>
+
+        </div>
+    </header>
+    <section>
+        <div class="home">
+            <div class="container">
+                <div class="heading">
+                    <h1>Add notes, save it once and access from anywhere!</h1>
+                </div>
+                <div class="newNote">
+                    <h2>New Note</h2>
+                    <input type="text" id="title" placeholder="Note title">
+                    <textarea name="textArea" id="addText" placeholder="Write your note.."></textarea>
+                    <button class="btn" id="addBtn">Add Note</button>
+                </div>
+                <div class="head">
+                    <h2>Your Notes</h2>
+                </div>
+                <div class="oldNotes" id="oldNotes">
+                </div>
+
+            </div>
+        </div>
+    </section>
+</body>
+<script src="index.js"></script>
+<script>
+    function toggle() {
+    var menuToggle = document.querySelector('.toggle');
+    var form = document.querySelector('.formbox');
+    menuToggle.classList.toggle('active');
+    form.classList.toggle('active');
+    
+    }
+</script>
+
+</html>

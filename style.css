@@ -1,0 +1,173 @@
+html,body{
+    margin: 0%;
+    padding: 0%;
+}
+:root{
+    --primary:#121113;
+    --secondary:white;
+    --noteprimary:white;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Ubuntu', sans-serif;
+}
+header .container{
+    display: flex;
+    background-color: #121113;
+    color: #F7F7F2;
+    align-items: center;
+    justify-content: space-between;
+    height: 2.5rem;
+    padding: 10px 20px;
+    font-family:'Ubuntu', sans-serif;
+}
+.main{
+    display: flex;
+    width:-webkit-fill-available;
+    align-items: center;
+}
+
+.logo{
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+
+    font-family: 'Roboto Slab', serif;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+.center{
+    font-size: 2rem;
+    margin: auto;
+    font-family:'Ubuntu', sans-serif;
+}
+.btn{
+    position: relative;
+    background-color: transparent;
+    /* max-width: 140px; */
+    padding: 6px;
+    /* margin-left: 100px; */
+    color:  #F7F7F2;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 600;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    /* margin-top: 20px; */
+    border: 2px solid white;
+    transition-duration: 0.7s;
+    /* height: 25px; */
+    
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+.formbox{
+    display: flex;
+    align-items: center;
+
+}
+.formbox input{
+    height: 25px;
+    color: white;
+    background-color: transparent;
+    border-radius: 4px;
+    width: 200px;
+    margin-right: 10px;
+    border: 2px solid white;
+}
+.home{
+    background-color: #F7F7F2;
+    color: #121113;
+    position: relative;
+    min-height: 100vh;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+.home .container{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding: 0% 15%;
+}
+.home h1{
+    width: 81.4%;
+    margin: auto;
+}
+
+.heading{
+    font-size: 1.4rem;
+}
+.newNote{
+    color: var(--primary);
+    width: 100%;
+    margin-top: 100px;
+}
+.newNote #title{
+    width: 100%;
+    margin-top: 2%;
+    border-color: var(--primary);
+    border-radius: 5px;
+    height: 30px;
+    padding: 0px 5px;
+    font-size: 1rem;
+}
+.newNote textarea{
+    width: 100%;
+    margin: 2% 0%;
+    border-color: var(--primary);
+    border-radius: 5px;
+    padding: 0px 5px;
+    resize: none;
+    height: 100px;
+    font-size: 1rem;
+}
+.head h2{
+    text-align: center;
+    font-family:  'Ubuntu', sans-serif;
+    margin: 10px;
+}
+.noteBox{
+    width: 30%;
+    margin: 10px 10px;
+    padding: 5px 3px;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: var(--noteprimary);
+    border: 2px solid black;
+    background-color: #7B5E7B;
+}
+.noteBox p{
+    padding: 10px 0px;
+}
+.oldNotes{
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+}
+#addBtn{
+    border-color: var(--primary);
+    color: var(--primary);
+
+    font-size: 1rem;
+}
+#addBtn:hover{
+    background-color: var(--primary);
+    color: white;
+}
+#deleteBtn{
+    border-color: var(--secondary);
+    color: var(--secondary);
+    font-size: 1rem;    
+}
+#deleteBtn:hover{
+    background-color: var(--secondary);
+    color: black;
+}

@@ -1,0 +1,93 @@
+.center{
+    display: none;
+}
+.formbox{
+    margin-top: 2%;
+    width: 100%;
+    display: none;
+    
+}
+.formbox input{
+    width: 100%;
+    height: 20px;
+}
+.formbox .btn{
+    padding: 4px;
+    font-size: 0.7rem;
+}
+.formbox.active{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.toggle{
+    width: 40px;
+    height: 40px;
+    background-image: url("menu.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    margin-left: auto;
+    cursor: pointer;
+}
+.toggle.active{
+    width: 40px;
+    height: 40px;
+    background-image: url("close.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    margin-left: auto;
+    cursor: pointer;
+}
+header .container{
+    height: auto;
+    flex-direction: column;
+}
+.main{
+    width: 100%;
+    display: flex;
+}
+.home .container{
+    width: auto;
+    padding: 0%;
+}
+.home h1{
+    font-size: 1.4rem;
+    text-align: center;
+    width: auto;
+    margin: 0%;
+}
+.newNote{
+    margin-top: 50px;
+}
+.newNote h2{
+    font-size: 1rem;
+}
+.newNote #title,.newNote textarea{
+    font-size: 0.8rem;
+}
+.newNote #title{
+    height: 20px;
+}
+.newNote textarea{
+    height: 70px;
+}
+#addBtn, #deleteBtn{
+    padding: 4px;
+    font-size: 0.8rem;
+}
+
+.noteBox {
+    width: 100%;
+    margin: 5px 10px;
+    padding: 5px 3px;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+.noteBox h3{
+    font-size: 1rem;
+}
+.noteBox p{
+    font-size: 0.8rem;
+}
