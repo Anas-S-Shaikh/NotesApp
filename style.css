@@ -98,8 +98,7 @@ header .container{
     padding: 0% 15%;
 }
 .home h1{
-    width: 81.4%;
-    margin: auto;
+    text-align: center;
 }
 
 .heading{
